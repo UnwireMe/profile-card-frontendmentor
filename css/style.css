@@ -15,15 +15,42 @@ body {
     font-size: 18px;
 }
 
+
 .profile {
     display: flex;
+    position: relative;
     margin: 0 auto;
     min-height: 720px;
     max-width: 1440px;
-    background-color: aqua;
+    background-color: hsl(185, 75%, 39%);
 }
 
+#bg-image-top {
+    position: absolute;
+    width: 700px;
+    height: 460px;
+    overflow: hidden;
+}
+
+#bg-image-top img {
+    position: relative;
+    top: -505px;
+    left: -280px;
+}
+
+#bg-image-bottom {
+    display: flex;
+    position: absolute;
+    top: 370px;
+    right: 0px;
+    width: 750px;
+    height: 350px;
+    overflow: hidden;
+}
+
+
 .profile-card {
+    z-index: 1;
     margin: auto;
     font-family: 'Kumbh Sans', sans-serif;
     background-color: white;
@@ -50,7 +77,8 @@ body {
     padding-bottom: 0;
 }
 
-.profile-name, .age {
+.profile-name,
+.age {
     margin-bottom: 10px;
 }
 
@@ -96,10 +124,13 @@ body {
     letter-spacing: 2px;
 }
 
-.city, .stat-description, .age {
+.city,
+.stat-description,
+.age {
     color: gray;
 }
 
-.profile-name, .stat-number {
-    color: rgb(49, 49, 49);
+.profile-name,
+.stat-number {
+    color: hsl(0, 0%, 0%);
 }
