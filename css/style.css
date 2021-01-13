@@ -15,7 +15,6 @@ body {
     font-size: 18px;
 }
 
-
 .profile {
     display: flex;
     position: relative;
@@ -25,11 +24,14 @@ body {
     background-color: hsl(185, 75%, 39%);
 }
 
+/* BACKGROUND IMAGE CONTAINERS */
+
 #bg-image-top {
     position: absolute;
     width: 700px;
     height: 460px;
     overflow: hidden;
+    background-position: top left;
 }
 
 #bg-image-top img {
@@ -39,15 +41,19 @@ body {
 }
 
 #bg-image-bottom {
-    display: flex;
     position: absolute;
-    top: 370px;
-    right: 0px;
-    width: 750px;
+    width: 740px;
     height: 350px;
+    top: 350px;
+    left: 700px;
     overflow: hidden;
 }
 
+#bg-image-bottom img {
+    position: relative;
+}
+
+/* PROFILE */
 
 .profile-card {
     z-index: 1;
@@ -92,6 +98,8 @@ body {
 .stats-number {
     font-size: 18px;
 }
+
+/* STAT STYLING */
 
 .bottom-stats {
     display: flex;
