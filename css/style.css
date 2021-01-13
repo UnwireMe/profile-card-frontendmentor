@@ -25,7 +25,7 @@ body {
 
 .profile-card {
     margin: auto;
-    font-family: 'Kumbh Sans',sans-serif;
+    font-family: 'Kumbh Sans', sans-serif;
     background-color: white;
     background-image: url(/images/bg-pattern-card.svg);
     background-size: auto 140px;
@@ -37,22 +37,39 @@ body {
 
 .profile-image {
     display: block;
-    margin: 90px auto 0;
+    margin: 70px auto 0;
     border: 5px solid white;
     border-radius: 50px;
 }
 
+.profile-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin: 15px 95px 0;
+    padding-bottom: 0;
+}
+
+.profile-name, .age {
+    margin-bottom: 10px;
+}
+
 .city {
+    font-size: 14px;
+    margin: 3px auto 30px;
     text-align: center;
 }
 
-.profile-name, .stats-number {
+.profile-name,
+.stats-number {
     font-size: 18px;
 }
 
 .bottom-stats {
     display: flex;
-    padding: 20px;
+    padding: 25px;
+    margin-top: 10px;
+    border-top: 1px solid #eee;
 }
 
 .stats {
@@ -66,7 +83,6 @@ body {
 }
 
 .stat-number {
-
     font-weight: 700;
     padding: 0;
     margin: 0;
@@ -77,4 +93,13 @@ body {
     font-size: 10px;
     padding: 0;
     margin: 5px;
+    letter-spacing: 2px;
+}
+
+.city, .stat-description, .age {
+    color: gray;
+}
+
+.profile-name, .stat-number {
+    color: rgb(49, 49, 49);
 }
