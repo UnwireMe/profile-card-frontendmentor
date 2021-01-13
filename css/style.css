@@ -13,20 +13,28 @@
 
 body {
     font-size: 18px;
-    
 }
 
 .profile {
+    display: flex;
     margin: 0 auto;
-    height: 720px;
-    width: 1440px;
+    min-height: 720px;
+    max-width: 1440px;
     background-color: aqua;
 }
 
 .profile-card {
+    margin: auto;
     font-family: 'Kumbh Sans',sans-serif;
-    margin: 0 auto;
     background-color: white;
+    background-image: url(/images/bg-pattern-card.svg);
+    background-size: auto 140px;
+    background-repeat: no-repeat;
     height: 375PX;
     width: 330px;
+    border-radius: 15px;
+}
+
+.profile-image {
+    
 }
