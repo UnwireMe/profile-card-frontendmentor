@@ -41,3 +41,40 @@ body {
     border: 5px solid white;
     border-radius: 50px;
 }
+
+.city {
+    text-align: center;
+}
+
+.profile-name, .stats-number {
+    font-size: 18px;
+}
+
+.bottom-stats {
+    display: flex;
+    padding: 20px;
+}
+
+.stats {
+    flex-direction: row;
+    align-content: space-around;
+    text-align: center;
+    width: 70px;
+    margin: 0 auto;
+    padding: 0%;
+    flex-wrap: wrap;
+}
+
+.stat-number {
+
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
+.stat-description {
+    font-weight: lighter;
+    font-size: 10px;
+    padding: 0;
+    margin: 5px;
+}
