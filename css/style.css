@@ -1,8 +1,32 @@
-    .attribution {
-        font-size: 11px;
-        text-align: center;
-    }
+/* ATTRIBUTION */
 
-    .attribution a {
-        color: hsl(228, 45%, 44%);
-    }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* MAIN BODY */
+
+body {
+    font-size: 18px;
+    
+}
+
+.profile {
+    margin: 0 auto;
+    height: 720px;
+    width: 1440px;
+    background-color: aqua;
+}
+
+.profile-card {
+    font-family: 'Kumbh Sans',sans-serif;
+    margin: 0 auto;
+    background-color: white;
+    height: 375PX;
+    width: 330px;
+}
