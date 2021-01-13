@@ -3,6 +3,7 @@
 .attribution {
     font-size: 11px;
     text-align: center;
+    max-height: 20px;
 }
 
 .attribution a {
@@ -11,15 +12,18 @@
 
 /* MAIN BODY */
 
-body {
+html, body {
     font-size: 18px;
+    margin: 0;
+    overflow: hidden;
 }
+
 
 .profile {
     display: flex;
     position: relative;
     margin: 0 auto;
-    min-height: 720px;
+    height: 720px;
     max-width: 1440px;
     background-color: hsl(185, 75%, 39%);
 }
@@ -31,7 +35,6 @@ body {
     width: 700px;
     height: 460px;
     overflow: hidden;
-    background-position: top left;
 }
 
 #bg-image-top img {
@@ -43,7 +46,7 @@ body {
 #bg-image-bottom {
     position: absolute;
     width: 740px;
-    height: 350px;
+    height: 370px;
     top: 350px;
     left: 700px;
     overflow: hidden;
@@ -51,6 +54,27 @@ body {
 
 #bg-image-bottom img {
     position: relative;
+}
+
+/* MOBILE BACKGROUND IMAGE */
+
+@media only screen and (max-width: 425px) {
+
+    .profile {
+        max-height: 100vh;
+    }
+
+    #bg-image-top img {
+        top: -590px;
+        left: -765px;
+    }
+
+    #bg-image-bottom {
+        width: 240px;
+        height: 420px;
+        top: 300px;
+        left: 175px;
+    }
 }
 
 /* PROFILE */
@@ -98,8 +122,6 @@ body {
 .stats-number {
     font-size: 18px;
 }
-
-/* STAT STYLING */
 
 .bottom-stats {
     display: flex;
